@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
                                 <Typography variant="h3">PHƯƠNG THỨC THỰC HIỆN</Typography>
                                 <ul>
                                     <li>
-                                        Bước 1:
+                                    <Typography variant="h4">Bước 1:</Typography>
                                         <Typography>
                                             cấp thông tin về dữ liệu bị đánh cắp, rò rỉ (compromised/leaked data) trên các diễn đàn,
                                             underground forum, chợ đen, deep/dark web, mạng xã hội, trang chia sẻ dữ liệu, kho mã nguồn
@@ -91,13 +91,13 @@ const PrivacyPolicy = () => {
 
                                 <ul>
                                     <li>
-                                        Bước 2:<Typography>Cung cấp thông tin về các lỗ hổng bảo mật/mã độc tấn công</Typography>
+                                    <Typography variant="h4">Bước 2:</Typography><Typography>Cung cấp thông tin về các lỗ hổng bảo mật/mã độc tấn công</Typography>
                                     </li>
                                 </ul>
 
                                 <ul>
                                     <li>
-                                        Bước 3:
+                                    <Typography variant="h4">Bước 3:</Typography>
                                         <Typography>
                                             Cung cấp thông tin chung về các mối đe dọa, mã độc mới, sự cố về an ninh bảo mật mới xảy ra trên
                                             thế giới
@@ -107,7 +107,7 @@ const PrivacyPolicy = () => {
 
                                 <ul>
                                     <li>
-                                        Bước 4:
+                                    <Typography variant="h4">Bước 4:</Typography>
                                         <Typography>
                                             Cung cấp các báo cáo thông tin phân tích chuyên sâu từ đội ngũ chuyên gia của HSCT
                                         </Typography>
@@ -115,12 +115,12 @@ const PrivacyPolicy = () => {
                                 </ul>
                                 <ul>
                                     <li>
-                                        Bước 5:<Typography>Hỗ trợ tích hợp với hệ thống ANBM của khách hàng</Typography>
+                                    <Typography variant="h4">Bước 5:</Typography><Typography>Hỗ trợ tích hợp với hệ thống ANBM của khách hàng</Typography>
                                     </li>
                                 </ul>
                                 <ul>
                                     <li>
-                                        Kết quả:
+                                    <Typography variant="h4">Kết quả:</Typography>
                                         <ul>
                                             <li>Các mối đe đọa sẽ được cung cấp tới khách hàng sớm nhất</li>
                                             <li>

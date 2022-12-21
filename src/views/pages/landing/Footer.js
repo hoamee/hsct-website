@@ -16,7 +16,7 @@ import logoDark from 'assets/images/HSCT-logo-bold-white.png';
 const FooterWrapper = styled('div')(({ theme }) => ({
     padding: '35px 0',
     color: '#fff',
-    background: theme.palette.secondary.main,
+    background: '#000000',
     [theme.breakpoints.down('md')]: {
         textAlign: 'center'
     }
@@ -55,7 +55,7 @@ const FooterPage = () => {
             <FooterWrapper>
                 <Container>
                     <Grid container alignItems="center" spacing={gridSpacing}>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item xs={12} sm={6}>
                             <img src={logoDark} alt="Berry" width="100" />
                             <br />
                             <br />
@@ -75,7 +75,7 @@ const FooterPage = () => {
                             <br />
                             <Typography sx={{ color: 'white' }}>&copy; HSCT 2022. All rights reserved</Typography>
                         </Grid>
-                        <Grid item xs={12} sm={8}>
+                        <Grid item xs={12} sm={6}>
                             <Grid
                                 container
                                 alignItems="center"
