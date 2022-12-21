@@ -48,7 +48,7 @@ const plans = [
         link: '/service/pentest'
     },
     {
-        active: true,
+        active: false,
         icon: <SosIcon fontSize="large" />,
         title: 'INCIDENT RESPONSE',
         header: 'DỊCH VỤ ĐIỀU TRA VÀ ỨNG CỨU SỰ CỐ AN NINH MẠNG',
@@ -223,7 +223,7 @@ const Services = () => {
                                                     })}
                                                 </ul>
                                                 <Link href={plan.link} target="_blank" style={{ textDecoration: 'none' }}>
-                                                    Chi tiết
+                                                    ...Xem thêm
                                                 </Link>
                                             </Grid>
 

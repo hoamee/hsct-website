@@ -8,7 +8,7 @@ import KeyFeature from './KeyFeature';
 import Demos from './Demos';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
-import Customization from 'layout/Customization';
+// import Customization from 'layout/Customization';
 import AppBar from 'ui-component/extended/AppBar';
 
 const HeaderWrapper = styled('div')(({ theme }) => ({
@@ -51,7 +51,6 @@ const Landing = () => (
             <Subscribe />
         </SecondWrapper>
         <Footer />
-        <Customization />
     </>
 );
 

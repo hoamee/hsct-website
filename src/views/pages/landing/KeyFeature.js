@@ -8,7 +8,7 @@ import SubCard from 'ui-component/cards/SubCard';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import imgSottttVp from 'assets/images/landing/logo-sotttt-VinhPhuc.png';
+import imgSottttVp from 'assets/images/landing/logo-sotttt-vp.png';
 import imgIaiTech from 'assets/images/landing/iai-tech-logo.png';
 import imgDenChauAu from 'assets/images/landing/logo-denchauau.png';
 import imgMep from 'assets/images/landing/logo-mep.png';

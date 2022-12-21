@@ -90,8 +90,8 @@ const AppBar = ({ ...others }) => {
                             {/* <Button color="inherit" component={RouterLink} to="/" target="_blank">
                                 Đối tác
                             </Button> */}
-                            <Button color="inherit" component={RouterLink} to="/" target="_blank">
-                                Blog
+                            <Button color="inherit" >
+                                <Link href='https://blog.hsct.vn' target="_blank" style={{textDecoration: 'none'}}>Blog</Link> 
                             </Button>
                             <Button color="inherit" component={RouterLink} to="/contact-us">
                                 Liên hệ
@@ -139,7 +139,7 @@ const AppBar = ({ ...others }) => {
                                             </Link> */}
                                             <Link
                                                 style={{ textDecoration: 'none' }}
-                                                href="https://www.facebook.com/profile.php?id=100088675544308"
+                                                href="https://blog.hsct.vn"
                                                 target="_blank"
                                             >
                                                 <ListItemButton component="a">

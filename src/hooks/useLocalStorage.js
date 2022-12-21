@@ -4,14 +4,31 @@ import { useState, useEffect } from 'react';
 
 export default function useLocalStorage(key, defaultValue) {
     const [value, setValue] = useState(() => {
-        const storedValue = localStorage.getItem(key);
-        return storedValue === null ? defaultValue : JSON.parse(storedValue);
+        return {
+            "fontFamily": "Roboto",
+            "borderRadius": 8,
+            "outlinedFilled": true,
+            "navType": "light",
+            "presetColor": "theme2",
+            "locale": "en",
+            "rtlLayout": false,
+            "container": false
+        };
     });
 
     useEffect(() => {
         const listener = (e) => {
             if (e.storageArea === localStorage && e.key === key) {
-                setValue(e.newValue ? JSON.parse(e.newValue) : e.newValue);
+                setValue({
+                    fontFamily: 'Roboto',
+                    borderRadius: 8,
+                    outlinedFilled: true,
+                    navType: 'light',
+                    presetColor: 'theme2',
+                    locale: 'en',
+                    rtlLayout: false,
+                    container: false
+                });
             }
         };
         window.addEventListener('storage', listener);

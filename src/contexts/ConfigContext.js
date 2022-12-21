@@ -24,14 +24,16 @@ const ConfigContext = createContext(initialState);
 
 function ConfigProvider({ children }) {
     const [config, setConfig] = useLocalStorage('berry-config', {
-        fontFamily: initialState.fontFamily,
-        borderRadius: initialState.borderRadius,
-        outlinedFilled: initialState.outlinedFilled,
-        navType: initialState.navType,
-        presetColor: initialState.presetColor,
-        locale: initialState.locale,
-        rtlLayout: initialState.rtlLayout
+        fontFamily: "Roboto",
+        borderRadius: 8,
+        outlinedFilled: true,
+        navType: "light",
+        presetColor: "theme2",
+        locale: "en",
+        rtlLayout: false
     });
+
+    console.log(config);
 
     const onChangeMenuType = (navType) => {
         setConfig({
