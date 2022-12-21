@@ -27,6 +27,7 @@ import {
 import hsctLogo from 'assets/images/HSCT-logo-bold.png';
 
 // assets
+// eslint-disable-next-line
 import { IconBook, IconDashboard, IconHome2, IconPhoneCall, IconShare } from '@tabler/icons';
 import MenuIcon from '@mui/icons-material/Menu';
 
@@ -80,15 +81,15 @@ const AppBar = ({ ...others }) => {
                             </a>
                         </Typography>
                         <Stack direction="row" sx={{ display: { xs: 'none', sm: 'block' } }} spacing={2}>
-                            <Button color="inherit" component={Link} href="#" target="_blank">
+                            {/* <Button color="inherit" component={Link} href="#" target="_blank">
                                 Về chúng tôi
-                            </Button>
-                            <Button color="inherit" component={RouterLink} to="#services">
+                            </Button> */}
+                            <Button color="inherit" component={RouterLink} to="/service/list">
                                 Dịch vụ
                             </Button>
-                            <Button color="inherit" component={RouterLink} to="/" target="_blank">
+                            {/* <Button color="inherit" component={RouterLink} to="/" target="_blank">
                                 Đối tác
-                            </Button>
+                            </Button> */}
                             <Button color="inherit" component={RouterLink} to="/" target="_blank">
                                 Blog
                             </Button>
@@ -109,15 +110,15 @@ const AppBar = ({ ...others }) => {
                                         onKeyDown={drawerToggler(false)}
                                     >
                                         <List>
-                                            <Link style={{ textDecoration: 'none' }} href="#" target="_blank">
+                                            {/* <Link style={{ textDecoration: 'none' }} href="#" target="_blank">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconHome2 />
                                                     </ListItemIcon>
                                                     <ListItemText primary="Về chúng tôi" />
                                                 </ListItemButton>
-                                            </Link>
-                                            <Link style={{ textDecoration: 'none' }} href="#services">
+                                            </Link> */}
+                                            <Link style={{ textDecoration: 'none' }} href="/service/list">
                                                 <ListItemButton component="a">
                                                     <ListItemIcon>
                                                         <IconDashboard />
@@ -125,7 +126,7 @@ const AppBar = ({ ...others }) => {
                                                     <ListItemText primary="Dịch vụ" />
                                                 </ListItemButton>
                                             </Link>
-                                            <Link
+                                            {/* <Link
                                                 style={{ textDecoration: 'none' }}
                                                 href="#services"
                                             >
@@ -135,7 +136,7 @@ const AppBar = ({ ...others }) => {
                                                     </ListItemIcon>
                                                     <ListItemText primary="Đối tác" />
                                                 </ListItemButton>
-                                            </Link>
+                                            </Link> */}
                                             <Link
                                                 style={{ textDecoration: 'none' }}
                                                 href="https://www.facebook.com/profile.php?id=100088675544308"
@@ -150,7 +151,7 @@ const AppBar = ({ ...others }) => {
                                             </Link>
                                             <Link
                                                 style={{ textDecoration: 'none' }}
-                                                href="https://www.facebook.com/profile.php?id=100088675544308"
+                                                href="/contact-us"
                                                 target="_blank"
                                             >
                                                 <ListItemButton component="a">

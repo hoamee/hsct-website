@@ -44,6 +44,7 @@ const PagesTraining = Loadable(lazy(() => import('views/pages/saas-pages/Trainin
 const PagesPentest = Loadable(lazy(() => import('views/pages/saas-pages/Pentest')));
 const PagesMalware = Loadable(lazy(() => import('views/pages/saas-pages/Malware')));
 const PagesIncidentResponse = Loadable(lazy(() => import('views/pages/saas-pages/IncidentResponse')));
+const PagesServiceList = Loadable(lazy(() => import('views/pages/services-list')));
 
 // ==============================|| AUTHENTICATION ROUTING ||============================== //
 
@@ -169,6 +170,10 @@ const AuthenticationRoutes = {
         {
             path: '/service/malware',
             element: <PagesMalware />
+        },
+        {
+            path: '/service/list',
+            element: <PagesServiceList />
         },
         {
             path: '/service/IncidentResponse',

@@ -1,22 +1,17 @@
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Avatar, Button, Container, Grid, Link, Typography } from '@mui/material';
+import { Avatar, Container, Grid, Link, Typography } from '@mui/material';
 
 // project imports
 import FadeInWhenVisible from './Animation';
 import SubCard from 'ui-component/cards/SubCard';
-import AnimateButton from 'ui-component/extended/AnimateButton';
 import { gridSpacing } from 'store/constant';
 
 // assets
-import FolderTwoToneIcon from '@mui/icons-material/FolderTwoTone';
-import CodeTwoToneIcon from '@mui/icons-material/CodeTwoTone';
-import EmojiEmotionsTwoToneIcon from '@mui/icons-material/EmojiEmotionsTwoTone';
-import LockOpenTwoToneIcon from '@mui/icons-material/LockOpenTwoTone';
-import AttachmentTwoToneIcon from '@mui/icons-material/AttachmentTwoTone';
-import CallSplitTwoToneIcon from '@mui/icons-material/CallSplitTwoTone';
-import TextFieldsIcon from '@mui/icons-material/TextFields';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import imgSottttVp from 'assets/images/landing/logo-sotttt-VinhPhuc.png';
+import imgIaiTech from 'assets/images/landing/iai-tech-logo.png';
+import imgDenChauAu from 'assets/images/landing/logo-denchauau.png';
+import imgMep from 'assets/images/landing/logo-mep.png';
 
 // ============================|| LANDING - KEY FEATURE PAGE ||============================ //
 
@@ -48,211 +43,108 @@ const KeyFeaturePage = () => {
                     <Grid container justifyContent="center" spacing={gridSpacing}>
                         <Grid item lg={3} md={4} xs={12} sm={6}>
                             <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
-                                                }}
-                                            >
-                                                <FolderTwoToneIcon />
-                                            </Avatar>
+                                <Link style={{ textDecoration: 'none' }} href="https://vinhphuc.gov.vn/" target="_blank">
+                                    <SubCard>
+                                        <Grid container alignItems="center" spacing={2}>
+                                            <Grid item>
+                                                <Avatar
+                                                    variant="rounded"
+                                                    sx={{
+                                                        ...avatarIconSx,
+                                                        bgcolor: 'rgba(0,0,0,0)',
+                                                        color: theme.palette.primary.main
+                                                    }}
+                                                >
+                                                    <img src={imgSottttVp} alt="Sở TTTT Vĩnh Phúc" style={{ height: '100%' }} />
+                                                </Avatar>
+                                            </Grid>
+                                            <Grid item xs zeroMinWidth>
+                                                <Typography variant="h5">Sở thông tin và truyền thông tỉnh Vĩnh Phúc</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">Easy Folder Structure</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
+                                    </SubCard>
+                                </Link>
                             </FadeInWhenVisible>
                         </Grid>
                         <Grid item lg={3} md={4} xs={12} sm={6}>
                             <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
-                                                }}
-                                            >
-                                                <CodeTwoToneIcon />
-                                            </Avatar>
+                                <Link style={{ textDecoration: 'none' }} href="http://www.iaitechvn.com/" target="_blank">
+                                    <SubCard>
+                                        <Grid container alignItems="center" spacing={2}>
+                                            <Grid item>
+                                                <Avatar
+                                                    variant="rounded"
+                                                    sx={{
+                                                        ...avatarIconSx,
+                                                        bgcolor: 'rgba(0,0,0,0)',
+                                                        color: theme.palette.primary.main
+                                                    }}
+                                                >
+                                                    <img src={imgIaiTech} alt="IAI TECH" style={{ width: '100%' }} />
+                                                </Avatar>
+                                            </Grid>
+                                            <Grid item xs zeroMinWidth>
+                                                <Typography variant="h5">IAI TECH Vietnam</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">Organized Code Structure</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
+                                    </SubCard>
+                                </Link>
                             </FadeInWhenVisible>
                         </Grid>
                         <Grid item lg={3} md={4} xs={12} sm={6}>
                             <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
-                                                }}
-                                            >
-                                                <EmojiEmotionsTwoToneIcon />
-                                            </Avatar>
+                                <Link style={{ textDecoration: 'none' }} href="http://www.thegioidendep.vn/" target="_blank">
+                                    <SubCard>
+                                        <Grid container alignItems="center" spacing={2}>
+                                            <Grid item>
+                                                <Avatar
+                                                    variant="rounded"
+                                                    sx={{
+                                                        ...avatarIconSx,
+                                                        bgcolor: 'rgba(0,0,0,0)',
+                                                        color: theme.palette.primary.main
+                                                    }}
+                                                >
+                                                    <img src={imgDenChauAu} alt="IAI TECH" style={{ width: '100%' }} />
+                                                </Avatar>
+                                            </Grid>
+                                            <Grid item xs zeroMinWidth>
+                                                <Typography variant="h5">thegioidendep.vn</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">The Hassle-free Setup Process</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
+                                    </SubCard>
+                                </Link>
                             </FadeInWhenVisible>
                         </Grid>
                         <Grid item lg={3} md={4} xs={12} sm={6}>
                             <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
-                                                }}
-                                            >
-                                                <LockOpenTwoToneIcon />
-                                            </Avatar>
+                                <Link style={{ textDecoration: 'none' }} href="https://www.facebook.com/MEPGROUP.VN" target="_blank">
+                                    <SubCard>
+                                        <Grid container alignItems="center" spacing={2}>
+                                            <Grid item>
+                                                <Avatar
+                                                    variant="rounded"
+                                                    sx={{
+                                                        ...avatarIconSx,
+                                                        bgcolor: 'rgba(0,0,0,0)',
+                                                        color: theme.palette.primary.main
+                                                    }}
+                                                >
+                                                    <img src={imgMep} alt="MEP ENGINEERING JOINT STOCK" style={{ width: '100%' }} />
+                                                </Avatar>
+                                            </Grid>
+                                            <Grid item xs zeroMinWidth>
+                                                <Typography variant="h5">MEP ENGINEERING JOINT STOCK</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">3 Auth Methods</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
+                                    </SubCard>
+                                </Link>
                             </FadeInWhenVisible>
                         </Grid>
-                        <Grid item lg={3} md={4} xs={12} sm={6}>
-                            <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
-                                                }}
-                                            >
-                                                <AttachmentTwoToneIcon />
-                                            </Avatar>
-                                        </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">React Hooks</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
-                            </FadeInWhenVisible>
-                        </Grid>
-                        <Grid item lg={3} md={4} xs={12} sm={6}>
-                            <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
-                                                }}
-                                            >
-                                                <CallSplitTwoToneIcon />
-                                            </Avatar>
-                                        </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">Code Splitting</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
-                            </FadeInWhenVisible>
-                        </Grid>
-                        <Grid item lg={3} md={4} xs={12} sm={6}>
-                            <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    bgcolor: theme.palette.mode === 'dark' ? theme.palette.dark[900] : 'secondary.light',
-                                                    color: theme.palette.secondary.main
-                                                }}
-                                            >
-                                                <TextFieldsIcon />
-                                            </Avatar>
-                                        </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">Google Fonts</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
-                            </FadeInWhenVisible>
-                        </Grid>
-                        <Grid item lg={3} md={4} xs={12} sm={6}>
-                            <FadeInWhenVisible>
-                                <SubCard>
-                                    <Grid container alignItems="center" spacing={2}>
-                                        <Grid item>
-                                            <Avatar
-                                                variant="rounded"
-                                                sx={{
-                                                    ...avatarIconSx,
-                                                    background: theme.palette.mode === 'dark' ? theme.palette.dark[800] : 'primary.light',
-                                                    color: theme.palette.primary.main
-                                                }}
-                                            >
-                                                <DesignServicesIcon />
-                                            </Avatar>
-                                        </Grid>
-                                        <Grid item xs zeroMinWidth>
-                                            <Typography variant="h5">Figma Design Files</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </SubCard>
-                            </FadeInWhenVisible>
-                        </Grid>
+                        
                     </Grid>
                 </Grid>
-                <Grid item xs={12} sx={{ mt: 3 }}>
-                    <Grid container justifyContent="center" spacing={gridSpacing}>
-                        <Grid item>
-                            <AnimateButton>
-                                <Button
-                                    component={Link}
-                                    href="https://material-ui.com/store/items/berry-react-material-admin/"
-                                    target="_blank"
-                                    variant="contained"
-                                >
-                                    Get Berry
-                                </Button>
-                            </AnimateButton>
-                        </Grid>
-                        <Grid item>
-                            <Button component={Link} href="https://www.facebook.com/profile.php?id=100088675544308" target="_blank" variant="text">
-                                Know More
-                            </Button>
-                        </Grid>
-                    </Grid>
-                </Grid>
+                
             </Grid>
         </Container>
     );

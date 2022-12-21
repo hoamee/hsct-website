@@ -10,8 +10,6 @@ import { gridSpacing } from 'store/constant';
 // assets
 import headerBackground from 'assets/images/landing/header-bg.jpg';
 
-
-
 const HeaderWrapper = styled('div')(({ theme }) => ({
     backgroundImage: `url(${headerBackground})`,
     backgroundSize: '100% 600px',
@@ -48,7 +46,7 @@ const PrivacyPolicy = () => {
                                         [theme.breakpoints.down('md')]: { fontSize: '1.8125rem', marginTop: '80px' }
                                     }}
                                 >
-                                    VỤ RÀ SOÁT PHÂN TÍCH, GỠ BỎ MÃ ĐỘC HẠI (MALWARE)
+                                    DỊCH VỤ ĐIỀU TRA VÀ ỨNG CỨU SỰ CỐ AN NINH MẠNG (INCIDENT RESPONSE)
                                 </Typography>
                             </Grid>
                             <Grid item xs={12}>

@@ -41,7 +41,7 @@ const ContactCard = () => {
                                     [theme.breakpoints.down('md')]: { fontSize: '1.8125rem', marginTop: '80px' }
                                 }}
                             >
-                                Trò chuyện cùng chuyên gia từ
+                                Liên hệ với chuyên gia từ
                                 <Box component="span" sx={{ ml: 1, color: '#DC143C' }}>
                                     HSCT
                                 </Box>
