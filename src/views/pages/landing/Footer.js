@@ -1,6 +1,6 @@
 // material-ui
 import { useTheme, styled } from '@mui/material/styles';
-import { Container, Grid, Link } from '@mui/material';
+import { Container, Grid, Link, Typography } from '@mui/material';
 
 // project imports
 import { gridSpacing } from 'store/constant';
@@ -57,6 +57,23 @@ const FooterPage = () => {
                     <Grid container alignItems="center" spacing={gridSpacing}>
                         <Grid item xs={12} sm={4}>
                             <img src={logoDark} alt="Berry" width="100" />
+                            <br />
+                            <br />
+                            <br />
+                            <Typography variant="h4" sx={{ color: 'white' }}>
+                                CÔNG TY TNHH AN NINH MẠNG HSCT
+                            </Typography>
+                            <br />
+                            <Typography sx={{ color: 'white' }}>
+                                Địa chỉ ĐKKD: Số 2, Ngách 56, Ngõ 328, Nguyễn Trãi, Phường Thanh Xuân Trung, Quận Thanh Xuân, Thành phố Hà
+                                Nội, Việt Nam
+                            </Typography>
+                            <br />
+                            <Typography sx={{ color: 'white' }}>Mã số doanh nghiệp 0110174908, cấp lần đầu ngày 08/11/2022</Typography>
+                            <br />
+                            <Typography sx={{ color: 'white' }}>Người đại diện: Ông Tống Viết Toàn</Typography>
+                            <br />
+                            <Typography sx={{ color: 'white' }}>&copy; HSCT 2022. All rights reserved</Typography>
                         </Grid>
                         <Grid item xs={12} sm={8}>
                             <Grid
@@ -66,7 +83,11 @@ const FooterPage = () => {
                                 sx={{ justifyContent: 'flex-end', [theme.breakpoints.down('md')]: { justifyContent: 'center' } }}
                             >
                                 <Grid item>
-                                    <FooterLink href="https://www.facebook.com/profile.php?id=100088675544308" target="_blank" underline="hover">
+                                    <FooterLink
+                                        href="https://www.facebook.com/profile.php?id=100088675544308"
+                                        target="_blank"
+                                        underline="hover"
+                                    >
                                         <InstagramIcon />
                                         Blog
                                     </FooterLink>
