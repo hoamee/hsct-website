@@ -16,4 +16,4 @@ yarn build
 ```bash
 serve -s build -l 80
 ```
-It's ok change port "80" by any other port.
+It's ok to change port "80" by any other port.
