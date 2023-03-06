@@ -1,12 +1,19 @@
-# Introduction
+# Deployment guide
 
-This is material design template created based on materially structure
-
-# Getting Started
-
-1. Installation process
-    - run 'npm install / yarn'
-    - start dev server run 'npm run start / yarn start'
-2. Deployment process
-    - Goto full-version directory and open package.json. Update homepage URL to the production URL
-    - Goto full-version directory and run 'npm run build / yarn build'
+## Requirements
+1. NodeJs
+2. Yarn
+## Install libs
+```bash
+yarn install
+yarn install serve
+```
+## Build production
+```bash
+yarn build
+```
+## Run application
+```bash
+serve -s build -l 80
+```
+It's ok change port "80" by any other port.
