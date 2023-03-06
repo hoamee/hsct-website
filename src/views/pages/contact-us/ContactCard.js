@@ -70,9 +70,8 @@ const ContactCard = () => {
                             <img src={imgContactUs} alt="HSCT-Contact" />
                             <Typography variant="h2">Liên hệ với chúng tôi</Typography>
                             <br />
-                            <Link style={{ textDecoration: 'none' }} href="mailto:toantv2@hsct.vn"><Chip label="toantv2@hsct.vn"/></Link> 
-                            <Link style={{ textDecoration: 'none' }} href="mailto:tula@hsct.vn"><Chip label="tula@hsct.vn" /> </Link>
-                            <Link style={{ textDecoration: 'none' }} href="tel:+84398718121"><Chip label="(+84) 398 718 121" /></Link>
+                            <Link style={{ textDecoration: 'none' }} href="mailto:info@hsct.vn"><Chip label="info@hsct.vn"/></Link> 
+                            <Link style={{ textDecoration: 'none' }} href="tel:+84975843644"><Chip label="(+84) 975 843 644" /></Link>
                             
                             
                         </CardContent>
